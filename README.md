@@ -54,7 +54,7 @@ Bison Grammar:
         | prog[L] "\\star"          // Finite iteration (Kleene star)
         ;
 
-    Flex Atom format:
+    Flex atom format:
         [a-zA-Z][a-zA-Z0-9]*"("[ ,a-zA-Z0-9]*")"
         [a-zA-Z][a-zA-Z0-9]* 
 

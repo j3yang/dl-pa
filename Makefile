@@ -28,9 +28,3 @@ $(SRC_DIRS)/Parser.cpp: $(SRC_DIRS)/Parser.y
 .PHONY: clean
 clean:
 	rm -f $(BUILD_DIR)/* $(SRC_DIRS)/Parser.output $(SRC_DIRS)/Parser.cpp $(SRC_DIRS)/Parser.hpp $(SRC_DIRS)/lex.yy.c 
-
-# flex Lexer.l &&
-#  bison --verbose --debug -d Parser.y -o Parser.cpp &&
-#   gcc -c lex.yy.c -o lex.yy.o &&
-#    g++ -std=c++17 Algorithms.cpp Utility.cpp Parameters.cpp FormulaGenerator.cpp Formula.cpp Program.cpp lex.yy.o Parser.cpp -o dlpa
-

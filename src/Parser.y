@@ -119,19 +119,6 @@ valuation
 
 %%
 
-/*
-Options:
-    -c check model
-    -s solve
-    -g generate formula
-    -v verbose
-    -f read from file
-    -o output to file
-
-Usage:
-    ./dlpa_solve {-c|-s|-g} [-v] [-f input_file_path] [-o output_file_path]
-*/
-
 int main(int argc, char *argv[]) {
     std::vector<std::string> args(argv + 1, argv + argc);
     string input_file_path;
