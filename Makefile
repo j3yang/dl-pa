@@ -14,9 +14,6 @@ $(shell mkdir -p $(BUILD_DIR))
 SRCS := $(shell find $(SRC_DIRS) -name '*.cpp')
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 
-# $(BUILD_DIR)/$(TARGET_EXEC): $(SRCS) $(BUILD_DIR)/lex.yy.o $(SRC_DIRS)/Parser.cpp
-# 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $(SRCS) $(BUILD_DIR)/lex.yy.o $(SRC_DIRS)/Parser.cpp -o $@
-
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS) $(BUILD_DIR)/lex.yy.o $(BUILD_DIR)/Parser.o
 	$(CXX) $(OBJS) $(BUILD_DIR)/lex.yy.o $(BUILD_DIR)/Parser.o -o $@ $(LDFLAGS)
 
