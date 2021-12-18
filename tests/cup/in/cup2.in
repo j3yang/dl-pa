@@ -1,0 +1,1 @@
+<atom1 <- \top \cup \atom2 <- \top>(atom1 \or atom2)

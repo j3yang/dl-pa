@@ -1,0 +1,1 @@
+{atom4} <(atom1 <- atom2 \seq atom2 <- atom3 \seq atom3 <- atom4 \seq atom4 <- \atom1)\star>atom5

@@ -1,0 +1,1 @@
+<atom1 <- \top \cup atom2 <- \top>\neg(\neg atom1 \or \neg atom2)

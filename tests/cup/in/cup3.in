@@ -1,0 +1,1 @@
+{atom2} <(?atom2? \seq \atom1 <- \top) \cup (?\neg atom1? \seq atom2 <- \neg \top)> (atom1 \or atom2)
